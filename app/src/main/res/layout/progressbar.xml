@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pnikosis.materialishprogress.ProgressWheel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progressBar_loading"
+    android:layout_width="@dimen/progressbar_size"
+    android:layout_height="@dimen/progressbar_size"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:visibility="gone"
+    wheel:matProg_barColor="@color/app_primary"
+    wheel:matProg_progressIndeterminate="true" />

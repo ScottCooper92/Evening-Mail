@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 10 Inch Portrait -->
+
+    <!-- General -->
+    <dimen name="activity_horizontal_margin">62dp</dimen>
+    <dimen name="activity_vertical_margin">64dp</dimen>
+    <dimen name="progressbar_size">300dp</dimen>
+
+    <!-- Articles -->
+    <dimen name="detail_backdrop_height">564dp</dimen>
+    <dimen name="text_headline_size">50sp</dimen>
+
+    <!-- Text Sizes -->
+    <!-- Small -->
+
+    <!-- Normal -->
+    <dimen name="text_content_size">20sp</dimen>
+    <dimen name="text_pubdate_size">16sp</dimen>
+
+    <!-- Large -->
+
+    <!-- Huge -->
+
+    <!-- FAB -->
+
+</resources>

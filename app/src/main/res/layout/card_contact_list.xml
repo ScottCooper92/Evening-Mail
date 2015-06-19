@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_card_root"
+        style="@style/Widget.CardContentPadded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_contact_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/contact_row_title_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/contact_row_title_text_size" />
+
+        <include layout="@layout/divider" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

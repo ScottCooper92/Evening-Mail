@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Evening Mail</string>
+
+
+    <!-- Navigation labels -->
+    <string name="label_news">News</string>
+    <string name="label_afc">Barrow AFC</string>
+    <string name="label_raiders">Barrow Raiders</string>
+    <string name="label_football">Football</string>
+    <string name="label_rugby">Rugby League</string>
+    <string name="label_cricket">Cricket</string>
+    <string name="label_junior_sport">Junior Sport</string>
+    <string name="label_other_sport">Other Sport</string>
+    <string name="label_settings">Settings</string>
+    <string name="label_about">About</string>
+    <string name="label_contact">Contact Us</string>
+
+    <!-- Menu Options -->
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="share_via">Share via</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_upgrade">Remove Adverts</string>
+    <string name="action_contact">Contact</string>
+    <string name="action_about">About</string>
+
+    <!-- Snackbar -->
+    <string name="snackbar_update_fail">Unable to update</string>
+    <string name="snackbar_action_retry">RETRY</string>
+
+    <!-- News Detail -->
+    <string name="last_updated">Last updated:</string>
+
+
+    <!-- Settings Screen -->
+    <string name="settings_section_data_cache">Data / Cache</string>
+    <string name="settings_title_clear_data">Clear data</string>
+    <string name="settings_summary_clear_data">Remove all saved news articles.</string>
+
+    <string name="settings_section_auto_update">Auto Update</string>
+    <string name="settings_title_auto_upate">Enable auto update</string>
+    <string name="settings_title_update_mobile">Update while on mobile network</string>
+    <string name="settings_summary_update_mobile">Enable the app to use your mobile data to download articles in the background.</string>
+    <string name="settings_summary_auto_upate">Automatically update the articles in the background.</string>
+    <string name="settings_title_update_time">Schedule updates</string>
+    <string name="settings_summary_update_time">Schedule update at a specific time</string>
+
+    <string name="settings_section_notifications">Notifications</string>
+    <string name="settings_title_notifications">Enable notifications</string>
+    <string name="settings_summary_notifications">Allow the Evening Mail to send you notifications when new articles are downloaded</string>
+
+    <string name="settings_section_accessibility">Accessibility</string>
+    <string name="settings_title_text_size">Text size</string>
+
+    <string name="settings_section_privacy">Privacy</string>
+    <string name="settings_title_statistics">Share statistics</string>
+    <string name="settings_summary_statistics">Send anonymous data to help improve the app. For more details see our Privacy policy.</string>
+
+    <string name="settings_section_about">About</string>
+    <string name="settings_title_version">Evening Mail Version</string>
+
+    <!-- Dialogs -->
+    <string name="clear_cache_title">Are you sure?</string>
+    <string name="clear_cache_text">Clearing the cache will remove all articles from your device.</string>
+
+
+    <!-- General -->
+    <string name="other">Other</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <!-- Placeholders -->
+    <string name="sample_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="sample_subheading">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit…</string>
+    <string name="sample_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet varius vehicula. Pellentesque tellus tellus, consequat vitae magna quis, sagittis ullamcorper quam. Nunc vitae leo sed libero pharetra pulvinar. Pellentesque cursus a turpis sed eleifend. Nunc blandit finibus vestibulum. Fusce lacinia nulla in lobortis hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc porttitor consequat est et tristique. Pellentesque tristique, massa tincidunt sollicitudin pharetra, arcu justo convallis ipsum, id commodo nulla lorem ac felis.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam condimentum ornare porta. Curabitur gravida faucibus magna sed iaculis. Curabitur tincidunt nunc id turpis rhoncus, a lacinia augue rutrum. Etiam ante sem, commodo a molestie ut, tristique in nulla. Pellentesque nec ex ac augue pellentesque lacinia. Ut vitae massa vitae lorem interdum convallis id quis leo. Nam eu sagittis tortor, sollicitudin elementum arcu. Ut suscipit ex ante, eget pulvinar felis fermentum et. Suspendisse vel velit imperdiet risus bibendum consequat et nec sem. Aenean vel aliquam nibh. Cras ultrices accumsan ipsum nec convallis.
+In rhoncus, neque eget iaculis dictum, justo felis fringilla neque, quis varius sapien odio nec mi. Suspendisse nec nisi ultricies, laoreet elit ullamcorper, dictum augue. Aliquam in mattis diam. Quisque lorem nulla, sollicitudin eu rhoncus ut, commodo non dui. Sed arcu augue, gravida vel felis non, fermentum interdum massa. Suspendisse potenti. Morbi id commodo magna. Vestibulum consectetur diam vel ex cursus, quis placerat neque facilisis. Aenean consequat ipsum sit amet imperdiet eleifend. Duis laoreet rhoncus lorem, at sodales magna varius ut. Phasellus aliquet lorem in dictum semper.</string>
+    <string name="sample_updated">12/06/1992 12:53pm</string>
+
+
+</resources>

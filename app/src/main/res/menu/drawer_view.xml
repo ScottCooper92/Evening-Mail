@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_news"
+            android:checked="true"
+            android:icon="@drawable/ic_newspaper_grey600_18dp"
+            android:title="@string/label_news" />
+
+        <item
+            android:id="@+id/nav_afc"
+            android:icon="@drawable/ic_football"
+            android:title="@string/label_afc" />
+
+        <item
+            android:id="@+id/nav_raiders"
+            android:icon="@drawable/ic_rugby"
+            android:title="@string/label_raiders" />
+
+        <item
+            android:id="@+id/nav_football"
+            android:icon="@drawable/ic_football"
+            android:title="@string/label_football" />
+
+        <item
+            android:id="@+id/nav_league"
+            android:icon="@drawable/ic_rugby"
+            android:title="@string/label_rugby" />
+
+        <item
+            android:id="@+id/nav_cricket"
+            android:icon="@drawable/ic_cricket"
+            android:title="@string/label_cricket" />
+
+        <item
+            android:id="@+id/nav_junior"
+            android:icon="@drawable/ic_junior"
+            android:title="@string/label_junior_sport" />
+
+        <item
+            android:id="@+id/nav_other"
+            android:icon="@drawable/ic_newspaper_grey600_18dp"
+            android:title="@string/label_other_sport" />
+
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_email_grey_600_18dp"
+                android:title="@string/label_contact" />
+            <!--<item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_grey_600_18dp"
+                android:title="@string/label_about" />-->
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_grey_600_18dp"
+                android:title="@string/label_settings" />
+        </menu>
+    </item>
+
+</menu>

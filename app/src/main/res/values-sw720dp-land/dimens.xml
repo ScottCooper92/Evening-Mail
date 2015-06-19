@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 10 Inch Landscape -->
+
+    <!-- General -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_vertical_margin">86dp</dimen>
+    <dimen name="progressbar_size">300dp</dimen>
+
+    <!-- Articles -->
+    <dimen name="detail_backdrop_height">584dp</dimen>
+    <dimen name="text_headline_size">50sp</dimen>
+
+</resources>

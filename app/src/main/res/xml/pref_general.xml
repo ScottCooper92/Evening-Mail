@@ -1,0 +1,108 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Data / Cache -->
+    <PreferenceCategory android:title="@string/settings_section_data_cache">
+
+        <Preference
+            android:key="clearCache"
+            android:summary="@string/settings_summary_clear_data"
+            android:title="@string/settings_title_clear_data" />
+
+    </PreferenceCategory>
+
+    <!-- Auto Update -->
+    <!--<PreferenceCategory android:title="@string/settings_section_auto_update">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:summary="@string/settings_summary_auto_upate"
+            android:title="@string/settings_title_auto_upate" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:summary="@string/settings_summary_update_mobile"
+            android:title="@string/settings_title_update_mobile" />
+
+        <ListPreference
+            android:summary="@string/settings_summary_update_time"
+            android:title="@string/settings_title_update_time" />
+
+    </PreferenceCategory>-->
+
+    <!-- Notification -->
+    <!--<PreferenceCategory android:title="@string/settings_section_notifications">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:summary="@string/settings_summary_notifications"
+            android:title="@string/settings_title_notifications" />
+
+    </PreferenceCategory>-->
+
+    <!-- Accessibility -->
+    <!--<PreferenceCategory android:title="@string/settings_section_accessibility">
+
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/textSizeArray"
+            android:entryValues="@array/textSizeArrayValues"
+            android:key="key"
+            android:negativeButtonText="@string/cancel"
+            android:positiveButtonText="@null"
+            android:title="@string/settings_title_text_size" />
+
+    </PreferenceCategory>-->
+
+    <!-- Privacy -->
+    <PreferenceCategory android:title="@string/settings_section_privacy">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="shareStatistics"
+            android:summary="@string/settings_summary_statistics"
+            android:title="@string/settings_title_statistics" />
+
+    </PreferenceCategory>
+
+    <!-- About the app -->
+    <PreferenceCategory android:title="@string/settings_section_about">
+
+        <Preference
+            android:key="aboutApp"
+            android:title="@string/settings_title_version" />
+
+    </PreferenceCategory>
+
+    <!--<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="example_checkbox"
+        android:summary=""
+        android:title="checkbox" />
+
+    &lt;!&ndash; NOTE: EditTextPreference accepts EditText attributes. &ndash;&gt;
+    &lt;!&ndash; NOTE: EditTextPreference's summary should be set to its value by the activity code. &ndash;&gt;
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="default"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="title" />
+
+    &lt;!&ndash; NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. &ndash;&gt;
+    &lt;!&ndash; NOTE: ListPreference's summary should be set to its value by the activity code. &ndash;&gt;
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/testArray"
+        android:entryValues="@array/testArray"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="title" />-->
+
+
+</PreferenceScreen>

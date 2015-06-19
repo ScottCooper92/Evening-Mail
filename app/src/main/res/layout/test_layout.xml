@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_article_title"
+            style="@style/Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planes intercepted and ships searched in Cumbria counter terrorism operation"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/textView_article_subheading"
+            style="@style/Subheading"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="POLICING operations have taken place in air and sea ports across Cumbria this week as officers joined a national campaign to protect the public from the threat of crime and terrorism." />
+
+        <TextView
+            android:id="@+id/textView_article_text1"
+            style="@style/Content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:text="this is the first text this is the first text this is the first text this is the first text this is the first text
+            this is the first text this is the first text this is the first text this is the first text this is the first text this is the first text "
+            android:textStyle="italic" />
+
+        <com.mopub.mobileads.MoPubView
+            android:id="@+id/adview_middle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView_article_text2"
+            style="@style/Content"
+            android:text="this is the first text this is the first text this is the first text this is the first text " />
+
+        <TextView
+            android:id="@+id/textView_pubDate"
+            style="@style/Pubdate"
+            android:text="Last updated: Today" />
+
+    </LinearLayout>
+
+    <include layout="@layout/progressbar" />
+
+    <com.mopub.mobileads.MoPubView
+        android:id="@+id/adview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/black" />
+
+</LinearLayout>

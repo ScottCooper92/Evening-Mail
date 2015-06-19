@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/contact_row_padding_bottom"
+    android:paddingLeft="@dimen/contact_row_padding_start"
+    android:paddingRight="@dimen/contact_row_padding_end"
+    android:paddingTop="@dimen/contact_row_padding_top"
+    tools:ignore="RtlHardcoded">
+
+    <ImageView
+        android:id="@+id/imageView_contact_icon"
+        android:layout_width="@dimen/contact_row_icon_width"
+        android:layout_height="@dimen/contact_row_icon_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/contact_row_icon_spacing"
+        android:layout_marginTop="@dimen/contact_row_icon_margin_top"
+        android:scaleType="fitCenter"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView_contact_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/contact_row_header_margin_bottom"
+        android:layout_toRightOf="@id/imageView_contact_icon"
+        android:textColor="@color/contact_row_header_text_color"
+        android:textSize="@dimen/contact_row_title_text_size" />
+
+    <TextView
+        android:id="@+id/textView_contact_subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView_contact_header"
+        android:layout_below="@+id/textView_contact_header"
+        android:textColor="@color/contact_row_sub_header_text_color" />
+
+</RelativeLayout>

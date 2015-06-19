@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="textSizeArray">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+
+    <string-array name="textSizeArrayValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- Contact -->
+    <string-array name="contactMethodArray">
+        <item>Address</item>
+        <item>Phone</item>
+        <item>Email</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Complaints</item>
+    </string-array>
+
+    <string-array name="contactMethodTitlesArray">
+        <item>emailTitleArray</item>
+        <item>emailTitleArray</item>
+        <item>emailTitleArray</item>
+        <item>emailTitleArray</item>
+        <item>emailTitleArray</item>
+        <item>emailTitleArray</item>
+    </string-array>
+
+    <string-array name="contactMethodSubtitlesArray">
+        <item>emailSubtitleArray</item>
+        <item>emailSubtitleArray</item>
+        <item>emailSubtitleArray</item>
+        <item>emailSubtitleArray</item>
+        <item>emailSubtitleArray</item>
+        <item>emailSubtitleArray</item>
+    </string-array>
+
+    <!-- Address -->
+    <string-array name="addressTitles">
+        <item>Furness Newspapers</item>
+        <item>Millom Network Centre</item>
+    </string-array>
+
+    <string-array name="addressSubtitles">
+        <item>Abbey Road, Barrow-in-Furness, Cumbria, LA14 5QS</item>
+        <item>Salthouse Road, Millom. LA18 5AB</item>
+    </string-array>
+
+    <integer-array name="addressTypes">
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- Phone -->
+    <string-array name="phoneTitles">
+        <item>Main switchboard</item>
+        <item>Newsdesk</item>
+        <item>Newspaper Sales/Distribution</item>
+        <item>Newspaper/Magazine Subscriptions</item>
+        <item>Advertiser Distribution</item>
+        <item>Missing Supplements/Damaged Copies</item>
+    </string-array>
+
+    <string-array name="phoneSubtitles">
+        <item>01229 840100</item>
+        <item>01229 840151</item>
+        <item>01229 840178</item>
+        <item>0808 144 8 144</item>
+        <item>01228 612290</item>
+        <item>01229 840178</item>
+    </string-array>
+
+    <integer-array name="phoneTypes">
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- Emails -->
+    <string-array name="emailTitles">
+        <item>Letters</item>
+        <item>Newsdesk</item>
+        <item>Sports Desk</item>
+        <item>Photography</item>
+        <item>Newspaper Sales/Distribution</item>
+        <item>Newspaper/Magazine Distribution</item>
+        <item>Advertiser Distribution</item>
+        <item>Missing Supplements/Damaged Copies</item>
+    </string-array>
+
+    <string-array name="emailSubtitles">
+        <item>letters.em@nwemail.co.uk</item>
+        <item>news.em@nwemail.co.uk</item>
+        <item>sport.em@nwemail.co.uk</item>
+        <item>pictures.em@nwemail.co.uk</item>
+        <item>james.haney@cnmedia.co.uk</item>
+        <item>cnsubs@cnmedia.co.uk</item>
+        <item>pinpointleaflets@cngroup.co.uk</item>
+        <item>clive.holman@cnmedia.co.uk</item>
+    </string-array>
+
+    <integer-array name="emailTypes">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+
+    <!-- Social -->
+    <string-array name="socialTitles">
+        <item>Facebook</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string-array name="socialSubtitles">
+        <item>https://www.facebook.com/northwesteveningmail</item>
+        <item>https://twitter.com/NWEMlive</item>
+    </string-array>
+
+    <integer-array name="socialTypes">
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+    <!-- Complaint -->
+    <string-array name="complaintTitles">
+        <item>Telephone</item>
+        <item>Email</item>
+        <item>Website</item>
+    </string-array>
+
+    <string-array name="complaintSubtitles">
+        <item>0300 123 2220</item>
+        <item>complaints@ipso.co.uk</item>
+        <item>http://www.ipso.co.uk/</item>
+    </string-array>
+
+    <integer-array name="complaintTypes">
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+</resources>
