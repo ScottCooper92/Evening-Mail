@@ -19,7 +19,7 @@ import com.google.android.gms.analytics.GoogleAnalytics;
 import javax.inject.Inject;
 
 /**
- * TODO
+ * The SettingsFragment displays a list of settings the user can interact with
  */
 public class SettingsFragment extends PreferenceFragment implements SettingsView {
 

@@ -17,7 +17,8 @@ import com.cooper.nwemail.ui.settings.SettingsActivity;
 import com.squareup.otto.Subscribe;
 
 /**
- * TODO
+ * The MainActivity is the starting Activity in this application, it hosts the NewsListFragment and takes care of
+ * starting the NewsDetailActivity when an article has been clicked on.
  */
 public class MainActivity extends NavigationActivity {
 
@@ -52,8 +53,6 @@ public class MainActivity extends NavigationActivity {
 
     /**
      * Adds a new NewsListFragment to the FrameLayout in this view
-     *
-     * @param navigationEnum
      */
     private void addFragment(final NavigationEnum navigationEnum) {
         final NewsListFragment newsListFragment = NewsListFragment.newInstance(navigationEnum);

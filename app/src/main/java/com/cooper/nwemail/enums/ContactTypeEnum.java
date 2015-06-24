@@ -7,7 +7,8 @@ import com.cooper.nwemail.R;
 import com.cooper.nwemail.models.ContactMethod;
 
 /**
- * TODO
+ * The ContactTypeEnum represents the various methods contact methods used within each ContactGroup.
+ * Each enum is used to identify which Intent action to use when opening the app chooser dialog.
  */
 public enum ContactTypeEnum {
 

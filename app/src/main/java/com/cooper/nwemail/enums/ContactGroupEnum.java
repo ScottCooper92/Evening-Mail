@@ -1,7 +1,9 @@
 package com.cooper.nwemail.enums;
 
 /**
- * TODO
+ * The ContactGroupEnum represents the different groups of contact methods available.
+ * <p/>
+ * Contains util methods for finding String Arrays associated with each enum.
  */
 public enum ContactGroupEnum {
 

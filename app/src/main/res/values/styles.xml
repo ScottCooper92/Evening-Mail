@@ -41,7 +41,6 @@
     </style>
 
     <style name="Headline.Card" parent="Headline">
-        <!-- TODO - Size for Headline card -->
         <item name="android:textSize">@dimen/text_headline_card_size</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textColorLink">@color/app_primary</item>
@@ -71,7 +70,6 @@
     </style>
 
     <style name="Subheading.Card" parent="Content">
-        <!-- TODO -->
         <item name="android:textIsSelectable">false</item>
     </style>
 

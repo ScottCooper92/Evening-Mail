@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TODO
+ * A POJO Representing an XML Channel
  */
 @Root(name = "channel", strict = false)
 public class Channel {

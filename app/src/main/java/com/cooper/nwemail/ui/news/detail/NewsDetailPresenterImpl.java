@@ -8,7 +8,7 @@ import com.cooper.nwemail.models.Article;
 import javax.inject.Inject;
 
 /**
- * TODO
+ * Takes care of the logic when displaying a news article in NewsDetailActivity and NewsImageDetailActivity.
  */
 public class NewsDetailPresenterImpl extends NewsDetailPresenter {
 
@@ -84,7 +84,7 @@ public class NewsDetailPresenterImpl extends NewsDetailPresenter {
 
                 view.hideLoading();
             } else {
-                //TODO
+                view.displayError();
             }
         }
     }

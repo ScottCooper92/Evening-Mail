@@ -24,7 +24,14 @@ import io.fabric.sdk.android.Fabric;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
- * TODO
+ * The NWEApplication takes care of much of the global setup.
+ * Fabric - Answers and Crashlytics
+ * Calligraphy - Application wide Roboto
+ * Dagger
+ * IAB
+ * Google Analytics
+ * <p/>
+ * Much of the billing logic is handled here to allow it to be used from any activity.
  */
 public class NWEApplication extends Application {
 
@@ -61,8 +68,9 @@ public class NWEApplication extends Application {
         buildComponentAndInject();
 
         //Billing
-        //TODO - Create the Key by using multiple substrings to prevent fakes
-        final String base64EncodedPublicKey = getString(R.string.IAPKey);
+        final String base64EncodedPublicKey = getString(R.string.IAPKEY1)
+                + getString(R.string.IAPKEY2)
+                + getString(R.string.IAPKEY3);
 
         mHelper = new IabHelper(this, base64EncodedPublicKey);
         mHelper.startSetup(new IabHelper.OnIabSetupFinishedListener() {
@@ -161,7 +169,6 @@ public class NWEApplication extends Application {
 
             if (purchase.getSku().equals(SKU_PREMIUM)) {
                 Log.d(TAG, "Purchase is premium upgrade. Congratulating user.");
-                //TODO - Do we want to thank them?
                 isPremium = true;
             }
 
@@ -202,8 +209,7 @@ public class NWEApplication extends Application {
     }
 
     /**
-     * @param activity
-     * @param requestCode
+     * The upgrade method will display the PurchaseDialog to the user
      */
     public static void upgrade(final Activity activity, final int requestCode) {
         /* TODO: for security, generate your payload here for verification. See the comments on

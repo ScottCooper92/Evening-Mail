@@ -27,7 +27,7 @@ import butterknife.InjectView;
 import io.realm.RealmResults;
 
 /**
- * TODO
+ * The NewsListFragment displays a list view of articles
  */
 public class NewsListFragment extends BaseFragment implements NewsListView,
         SwipeRefreshLayout.OnRefreshListener {

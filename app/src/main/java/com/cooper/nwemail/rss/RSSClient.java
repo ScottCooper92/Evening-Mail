@@ -24,7 +24,8 @@ import retrofit.client.Response;
 import retrofit.converter.SimpleXMLConverter;
 
 /**
- * TODO
+ * The RSSClient is responsible for the setup of the API and downloading new data.
+ * Failures and success are broadcasted to their respective listeners.
  */
 public class RSSClient {
 

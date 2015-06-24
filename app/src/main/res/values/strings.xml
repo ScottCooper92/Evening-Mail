@@ -76,6 +76,7 @@
 Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam condimentum ornare porta. Curabitur gravida faucibus magna sed iaculis. Curabitur tincidunt nunc id turpis rhoncus, a lacinia augue rutrum. Etiam ante sem, commodo a molestie ut, tristique in nulla. Pellentesque nec ex ac augue pellentesque lacinia. Ut vitae massa vitae lorem interdum convallis id quis leo. Nam eu sagittis tortor, sollicitudin elementum arcu. Ut suscipit ex ante, eget pulvinar felis fermentum et. Suspendisse vel velit imperdiet risus bibendum consequat et nec sem. Aenean vel aliquam nibh. Cras ultrices accumsan ipsum nec convallis.
 In rhoncus, neque eget iaculis dictum, justo felis fringilla neque, quis varius sapien odio nec mi. Suspendisse nec nisi ultricies, laoreet elit ullamcorper, dictum augue. Aliquam in mattis diam. Quisque lorem nulla, sollicitudin eu rhoncus ut, commodo non dui. Sed arcu augue, gravida vel felis non, fermentum interdum massa. Suspendisse potenti. Morbi id commodo magna. Vestibulum consectetur diam vel ex cursus, quis placerat neque facilisis. Aenean consequat ipsum sit amet imperdiet eleifend. Duis laoreet rhoncus lorem, at sodales magna varius ut. Phasellus aliquet lorem in dictum semper.</string>
     <string name="sample_updated">12/06/1992 12:53pm</string>
+    <string name="snackbar_display_fail">Unable to display article</string>
 
 
 </resources>

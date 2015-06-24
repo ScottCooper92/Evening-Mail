@@ -2,6 +2,7 @@ package com.cooper.nwemail.ui.news.detail;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -15,7 +16,6 @@ import com.cooper.nwemail.application.ApplicationComponent;
 import com.cooper.nwemail.application.NWEApplication;
 import com.cooper.nwemail.constants.Constants;
 import com.cooper.nwemail.ui.common.BaseActivity;
-import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubView;
 
 import javax.inject.Inject;
@@ -24,7 +24,7 @@ import butterknife.InjectView;
 import butterknife.Optional;
 
 /**
- * TODO
+ * The NewsDetailActivity is the primary Activity used to display a news article.
  */
 public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
@@ -159,7 +159,6 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
     @Override
     public void setImageCaption(String caption) {
-        //TODO
     }
 
     @Override
@@ -169,32 +168,6 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
             mSquareAd.setAdUnitId(getString(R.string.AD_MIDDLE_ID));
             mSquareAd.loadAd();
             mSquareAd.setVisibility(View.VISIBLE);
-            mSquareAd.setBannerAdListener(new MoPubView.BannerAdListener() {
-                @Override
-                public void onBannerLoaded(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerFailed(MoPubView moPubView, MoPubErrorCode moPubErrorCode) {
-                    Log.d(TAG, "SquareAd - onBannerFailed: " + moPubErrorCode.toString());
-                }
-
-                @Override
-                public void onBannerClicked(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerExpanded(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerCollapsed(MoPubView moPubView) {
-
-                }
-            });
         }
     }
 
@@ -204,33 +177,13 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
             mBannerAd.setAdUnitId(getString(R.string.AD_BOTTOM_ID));
             mBannerAd.loadAd();
             mBannerAd.setVisibility(View.VISIBLE);
-            mBannerAd.setBannerAdListener(new MoPubView.BannerAdListener() {
-                @Override
-                public void onBannerLoaded(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerFailed(MoPubView moPubView, MoPubErrorCode moPubErrorCode) {
-                    Log.d(TAG, "BannerAd - onBannerFailed: " + moPubErrorCode.toString());
-                }
-
-                @Override
-                public void onBannerClicked(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerExpanded(MoPubView moPubView) {
-
-                }
-
-                @Override
-                public void onBannerCollapsed(MoPubView moPubView) {
-
-                }
-            });
         }
+    }
+
+    @Override
+    public void displayError() {
+        Snackbar.make(findViewById(android.R.id.content),
+                R.string.snackbar_display_fail, Snackbar.LENGTH_LONG).show();
     }
 
     @Override

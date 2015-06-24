@@ -1,7 +1,7 @@
 package com.cooper.nwemail.constants;
 
 /**
- * TODO
+ * Constants used throughout the application, kept here for ease of use
  */
 public class Constants {
 

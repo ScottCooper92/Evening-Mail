@@ -5,7 +5,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 /**
- * TODO
+ * A POJO representing an XML RSSFeed
  */
 @Root(name = "rss", strict = false)
 public class RSSFeed {

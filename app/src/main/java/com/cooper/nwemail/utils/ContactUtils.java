@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TODO
+ * Utility methods used to populate the ContactActivity
  */
 public class ContactUtils {
 

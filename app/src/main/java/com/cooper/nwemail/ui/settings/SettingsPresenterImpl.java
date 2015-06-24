@@ -5,7 +5,7 @@ import com.cooper.nwemail.data.DataManager;
 import javax.inject.Inject;
 
 /**
- * TODO
+ * The SettingsPresenter takes care of any logic associated with any settings options that require an immediate reaction
  */
 public class SettingsPresenterImpl extends SettingsPresenter {
 

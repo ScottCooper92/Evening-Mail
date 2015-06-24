@@ -8,9 +8,6 @@ import com.cooper.nwemail.rss.RSSClient;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * TODO
- */
 @Module
 public class NewsListModule {
 

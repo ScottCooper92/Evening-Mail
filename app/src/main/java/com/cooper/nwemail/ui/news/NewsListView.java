@@ -6,9 +6,9 @@ import com.cooper.nwemail.ui.common.BaseView;
 import io.realm.RealmResults;
 
 /**
-TODO
+ * This interface represents the actions that can be performed by a NewsListView
  */
-public interface NewsListView extends BaseView{
+public interface NewsListView extends BaseView {
 
     void displayArticles(final RealmResults<Article> articles);
 

@@ -8,9 +8,6 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * TODO
- */
 @Module
 public final class RSSModule {
 

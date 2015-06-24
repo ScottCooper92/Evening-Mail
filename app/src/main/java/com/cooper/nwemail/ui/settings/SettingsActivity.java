@@ -9,7 +9,7 @@ import com.cooper.nwemail.application.ApplicationComponent;
 import com.cooper.nwemail.ui.common.BaseActivity;
 
 /**
- * TODO
+ * The SettingsActivity simply hosts the SettingsFragment
  */
 public class SettingsActivity extends BaseActivity {
 

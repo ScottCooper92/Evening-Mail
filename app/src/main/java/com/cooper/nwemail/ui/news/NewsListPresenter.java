@@ -6,9 +6,6 @@ import com.cooper.nwemail.ui.common.BasePresenter;
 
 import io.realm.RealmResults;
 
-/**
- * TODO
- */
 public abstract class NewsListPresenter extends BasePresenter<NewsListView> {
 
     public NewsListPresenter(NewsListView view) {

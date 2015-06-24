@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="IAPKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj+b1Ef44ZFTOrCEZ92+
-        Mc+VQ79VL0ImBdfbIg+HKp2eN2ZAhVhvREcYYqf1peIBPrBRk0aWrjIwJsWppas6lPkIdN8MAtSaYBiMo
-        i5NZWPRFn0u1hJMnO91R4OJ0tCtaTC0qqoMlDKyjbr29yQBUj999IV9vN7rTl5JzZCZ/C56p4W3+CXm7nw
-        LVVEE4zT+6HAC4PeINEGpdQD1gIvdcH8NbZSNH26UVK9jY/Hr+BMxS22jqwQZk6CaTOuaVlBcj2APWoYeIaH
+    <string name="IAPKEY1">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj+b1Ef44ZFTOrCEZ92+
+        Mc+VQ79VL0ImBdfbIg+HKp2eN2ZAhVhvREcYYqf1peIBPrBRk0aWrjIwJsWppas6lPkIdN8MAtSaYBiMo</string>
+    <string name="IAPKEY2">i5NZWPRFn0u1hJMnO91R4OJ0tCtaTC0qqoMlDKyjbr29yQBUj999IV9vN7rTl5JzZCZ/C56p4W3+CXm7nw
+        LVVEE4zT+6HAC4PeINEGpdQD1gIvdcH8NbZSNH26UVK9jY</string>
+    <string name="IAPKEY3">/Hr+BMxS22jqwQZk6CaTOuaVlBcj2APWoYeIaH
         0rCJ2QEe+Yru+NNdWXNj62RgAWOko/OhnYUzZuG0qm8wsp/iEdeXNUJxIEaQWroF/n+UoNbIbzLwIDAQAB</string>
 
 </resources>

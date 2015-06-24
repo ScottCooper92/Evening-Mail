@@ -3,7 +3,7 @@ package com.cooper.nwemail.ui.news.detail;
 import com.cooper.nwemail.ui.common.BaseView;
 
 /**
- * TODO
+ * This interface represents a NewsDetailView, classes implementing this will be forced to act as a NewsDetailView
  */
 public interface NewsDetailView extends BaseView {
 
@@ -26,4 +26,6 @@ public interface NewsDetailView extends BaseView {
     void showMiddleAdvert();
 
     void showBottomAdvert();
+
+    void displayError();
 }

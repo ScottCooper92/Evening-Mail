@@ -7,7 +7,7 @@ import retrofit.http.GET;
 import retrofit.http.Path;
 
 /**
- * TODO
+ * An interface listing the endpoints used within this application
  */
 public interface RSSAPI {
 

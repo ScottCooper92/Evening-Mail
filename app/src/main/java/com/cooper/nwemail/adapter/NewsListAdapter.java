@@ -18,7 +18,8 @@ import com.squareup.picasso.Picasso;
 import io.realm.RealmResults;
 
 /**
- * TODO
+ * Adapter for the NewsList in NewsListFragment.
+ * Posts ArticleClickEvents to let any listeners know that an article has been clicked
  */
 public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.ArticleView> {
 

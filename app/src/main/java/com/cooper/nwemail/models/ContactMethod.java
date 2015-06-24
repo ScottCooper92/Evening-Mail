@@ -3,7 +3,7 @@ package com.cooper.nwemail.models;
 import com.cooper.nwemail.enums.ContactTypeEnum;
 
 /**
- * TODO
+ * A POJO representing a contact method
  */
 public class ContactMethod {
     public String heading;

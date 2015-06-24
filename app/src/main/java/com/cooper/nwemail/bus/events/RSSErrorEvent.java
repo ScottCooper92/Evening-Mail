@@ -3,7 +3,7 @@ package com.cooper.nwemail.bus.events;
 import retrofit.RetrofitError;
 
 /**
- * TODO
+ * An Object representing an RSSErrorEvent, thrown when the app failed to update.
  */
 public class RSSErrorEvent {
 

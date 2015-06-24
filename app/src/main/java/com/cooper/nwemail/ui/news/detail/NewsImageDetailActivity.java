@@ -20,7 +20,8 @@ import butterknife.InjectView;
 import butterknife.Optional;
 
 /**
- * TODO
+ * The NewsImageDetailActivity is similar to the NewsDetailActivity but has an ImageView,
+ * due to the overlap is simply extends NewsDetailActivity.
  */
 public class NewsImageDetailActivity extends NewsDetailActivity implements
         View.OnLongClickListener, View.OnClickListener {

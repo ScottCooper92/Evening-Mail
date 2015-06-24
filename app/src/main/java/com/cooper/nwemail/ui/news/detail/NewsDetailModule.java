@@ -6,9 +6,6 @@ import com.cooper.nwemail.data.DataManager;
 import dagger.Module;
 import dagger.Provides;
 
-/**
- * TODO
- */
 @Module
 public class NewsDetailModule {
 

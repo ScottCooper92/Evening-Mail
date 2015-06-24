@@ -5,7 +5,8 @@ import com.cooper.nwemail.enums.ContactGroupEnum;
 import java.util.List;
 
 /**
- * TODO
+ * A ContactMethodType represents a group of contact methods and contains a list
+ * of contact methods within it.
  */
 public class ContactMethodType {
 

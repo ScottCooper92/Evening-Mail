@@ -17,7 +17,7 @@ import javax.inject.Inject;
 import io.realm.RealmResults;
 
 /**
- * TODO
+ * The NewsListPresenter takes care of displaying the News list and handling any logic associated with updating etc
  */
 public class NewsListPresenterImpl extends NewsListPresenter {
 

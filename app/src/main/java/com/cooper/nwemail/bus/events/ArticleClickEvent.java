@@ -3,7 +3,7 @@ package com.cooper.nwemail.bus.events;
 import android.view.View;
 
 /**
- * TODO
+ * An Object representing an Article Click, lets listeners know what article has been clicked
  */
 public class ArticleClickEvent {
 

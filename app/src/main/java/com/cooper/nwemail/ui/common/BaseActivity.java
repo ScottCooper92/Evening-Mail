@@ -23,7 +23,13 @@ import butterknife.Optional;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
- * TODO
+ * The BaseActivity is inherited from by most Activities in this app, it contains various setup and utility methods
+ * used in most Activities so it's all placed here to prevent duplication.
+ * <p/>
+ * Takes care of:
+ * Adding the toolbar to the Activity as the ActionBar.
+ * ButterKnife Injection
+ * Global menus
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -48,7 +54,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         setupComponent(NWEApplication.get(this).component());
 
         //Lock to portrait if we're a phone
-        if(!getResources().getBoolean(R.bool.isTablet)){
+        if (!getResources().getBoolean(R.bool.isTablet)) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
     }

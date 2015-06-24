@@ -4,7 +4,7 @@ import com.cooper.nwemail.enums.ContactGroupEnum;
 import com.cooper.nwemail.models.ContactMethod;
 
 /**
- * TODO
+ * An Object representing a Contact click event, lets listeners know the contact method and the type
  */
 public class ContactRowClickedEvent {
 

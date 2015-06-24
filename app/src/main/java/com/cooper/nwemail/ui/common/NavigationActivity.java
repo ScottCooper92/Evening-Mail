@@ -14,7 +14,8 @@ import butterknife.InjectView;
 import butterknife.Optional;
 
 /**
- * TODO
+ * The NavigationActivity is inherited from when an Activity needs to show the NavigationDrawer.
+ * Takes care of saving the instance state when rotating.
  */
 public abstract class NavigationActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 

@@ -3,6 +3,7 @@ package com.cooper.nwemail.bus;
 import android.os.Handler;
 import android.os.Looper;
 
+import com.crashlytics.android.Crashlytics;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
@@ -37,7 +38,7 @@ public class AnyThreadBus extends Bus {
         try {
             super.unregister(object);
         } catch (IllegalArgumentException e) {
-            // TODO: use Crashlytics unhandled exception logging
+            Crashlytics.getInstance().core.logException(e);
         }
     }
 }

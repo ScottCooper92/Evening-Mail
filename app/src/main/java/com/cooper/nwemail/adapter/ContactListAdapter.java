@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
- * TODO
+ * Adapter for the ContactList in the ContactActivity
  */
 public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.ContactView> {
 

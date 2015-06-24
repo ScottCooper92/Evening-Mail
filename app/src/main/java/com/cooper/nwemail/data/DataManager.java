@@ -1,7 +1,6 @@
 package com.cooper.nwemail.data;
 
 import android.app.Application;
-import android.content.Context;
 import android.text.Html;
 
 import com.cooper.nwemail.enums.NavigationEnum;
@@ -14,21 +13,20 @@ import io.realm.RealmQuery;
 import io.realm.RealmResults;
 
 /**
- * TODO
+ * The DataManager is responsible
  */
 public class DataManager {
 
-    private final Context mContext;
     private final Realm mRealm;
 
     public DataManager(final Application application) {
-        mContext = application;
         mRealm = Realm.getInstance(application);
     }
 
     /**
-     * @param rssFeed
-     * @param feedId
+     * Parses the raw RSSFeed into a list of articles ready for displaying
+     * @param rssFeed RSSFeed POJO
+     * @param feedId The feedId, News, AFC etc
      */
     public void parseArticles(final RSSFeed rssFeed, final String feedId) {
         mRealm.beginTransaction();
@@ -91,8 +89,10 @@ public class DataManager {
     }
 
     /**
-     * @param articleId
-     * @return
+     * Find first article that match the given id
+     *
+     * @param articleId The article ID to match against
+     * @return The article found, null if not
      */
     public Article findArticleById(final String articleId) {
         // Build the query to find the article with the given id
@@ -104,8 +104,10 @@ public class DataManager {
     }
 
     /**
-     * @param mNewsType
-     * @return
+     * Find all articles that match the given news type
+     *
+     * @param mNewsType The type of news to match against
+     * @return A list of articles if found, null if not
      */
     public RealmResults<Article> findAllArticles(final NavigationEnum mNewsType) {
         // Build the query looking at all articles:
@@ -118,7 +120,7 @@ public class DataManager {
 
 
     /**
-     *
+     * Removes all records from the database
      */
     public void removeAllRecords() {
         mRealm.beginTransaction();
