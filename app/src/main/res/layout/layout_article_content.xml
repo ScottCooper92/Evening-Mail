@@ -1,45 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
 
-    <LinearLayout
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionGroup="true">
+
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/activity_vertical_margin"
-        android:layout_marginRight="@dimen/activity_vertical_margin"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView_article_title"
-                style="@style/Headline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sample_title"
-                android:textIsSelectable="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView_article_subheading"
-                style="@style/Subheading"
-                android:layout_marginTop="@dimen/double_text_margin"
-                android:text="@string/sample_subheading" />
+                <TextView
+                    android:id="@+id/textView_article_title"
+                    style="@style/Headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_title"
+                    android:textIsSelectable="true" />
 
-            <TextView
-                android:id="@+id/textView_article_text1"
-                style="@style/Content"
-                android:layout_marginTop="@dimen/text_margin" />
+                <TextView
+                    android:id="@+id/textView_article_subheading"
+                    style="@style/Subheading"
+                    android:layout_marginTop="@dimen/double_text_margin"
+                    android:text="@string/sample_subheading" />
+
+                <TextView
+                    android:id="@+id/textView_article_text1"
+                    style="@style/Content"
+                    android:layout_marginTop="@dimen/text_margin" />
+
+                <com.mopub.mobileads.MoPubView
+                    android:id="@+id/adview_middle"
+                    android:layout_width="@dimen/banner_ad_width"
+                    android:layout_height="@dimen/banner_ad_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/default_padding"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView_article_text2"
+                    style="@style/Content"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:text="@string/sample_content" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/progressbar" />
 
             <com.mopub.mobileads.MoPubView
-                android:id="@+id/adview_middle"
+                android:id="@+id/adview_bottom"
                 android:layout_width="@dimen/banner_ad_width"
                 android:layout_height="@dimen/banner_ad_height"
                 android:layout_gravity="center"
@@ -47,30 +74,13 @@
                 android:visibility="gone" />
 
             <TextView
-                android:id="@+id/textView_article_text2"
-                style="@style/Content"
+                android:id="@+id/textView_pubDate"
+                style="@style/Pubdate"
                 android:layout_marginTop="@dimen/text_margin"
-                android:text="@string/sample_content" />
-
+                android:text="Last updated: Today" />
 
         </LinearLayout>
 
-        <include layout="@layout/progressbar" />
+    </android.support.design.widget.CoordinatorLayout>
 
-        <com.mopub.mobileads.MoPubView
-            android:id="@+id/adview_bottom"
-            android:layout_width="@dimen/banner_ad_width"
-            android:layout_height="@dimen/banner_ad_height"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/default_padding"
-            android:visibility="gone" />
-
-        <TextView
-            android:id="@+id/textView_pubDate"
-            style="@style/Pubdate"
-            android:layout_marginTop="@dimen/text_margin"
-            android:text="Last updated: Today" />
-
-    </LinearLayout>
-
-</android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.NestedScrollView>

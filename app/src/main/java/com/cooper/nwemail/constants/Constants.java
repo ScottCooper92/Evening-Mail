@@ -5,6 +5,13 @@ package com.cooper.nwemail.constants;
  */
 public class Constants {
 
+    //TODOS
+    //TODO - Auto update after a period of time
+    //TODO - Notifications at a set time
+    //TODO - Swipe between stories
+    //TODO - Open drawer when first opened
+    //TODO - View/Save images
+
     /**
      * RSS Feed ID's *
      */

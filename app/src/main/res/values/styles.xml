@@ -29,56 +29,5 @@
         <item name="android:paddingTop">24dp</item>
     </style>
 
-    <!-- Text Styles -->
-    <!-- Headline -->
-    <style name="Headline" parent="TextAppearance.AppCompat.Headline">
-        <item name="android:textSize">@dimen/text_headline_size</item>
-        <item name="fontPath">@string/font_roboto_bold</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:autoLink">web</item>
-        <item name="android:textIsSelectable">true</item>
-        <item name="android:textColorLink">@color/app_primary</item>
-    </style>
-
-    <style name="Headline.Card" parent="Headline">
-        <item name="android:textSize">@dimen/text_headline_card_size</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textColorLink">@color/app_primary</item>
-        <item name="android:textIsSelectable">false</item>
-    </style>
-
-    <!-- Content -->
-    <style name="Content" parent="TextAppearance.AppCompat.Display4">
-        <item name="android:textSize">@dimen/text_content_size</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:autoLink">web|email</item>
-        <item name="android:textIsSelectable">true</item>
-        <item name="fontPath">@string/font_roboto_light</item>
-        <item name="android:textColorLink">@color/app_primary</item>
-    </style>
-
-    <!-- Subheading -->
-    <style name="Subheading" parent="TextAppearance.AppCompat.Subhead">
-        <item name="android:textSize">@dimen/text_content_size</item>
-        <item name="fontPath">@string/font_roboto_bold</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textIsSelectable">true</item>
-        <item name="android:autoLink">web|email</item>
-        <item name="android:textColorLink">@color/app_primary</item>
-    </style>
-
-    <style name="Subheading.Card" parent="Content">
-        <item name="android:textIsSelectable">false</item>
-    </style>
-
-    <!-- Pub Date -->
-    <style name="Pubdate" parent="TextAppearance.AppCompat.Caption">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/text_pubdate_size</item>
-        <item name="android:textColor">@android:color/darker_gray</item>
-    </style>
 
 </resources>
