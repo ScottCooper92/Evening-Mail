@@ -6,7 +6,6 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.cooper.nwemail.R;
@@ -67,23 +66,12 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        if (!NWEApplication.isPremium()) {
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-        }
-        return true;
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 return true;
-            case R.id.action_upgrade:
-                NWEApplication.upgrade(this, 1001);
-                break;
             case R.id.action_contact:
                 final Intent contactIntent = new Intent(this, ContactActivity.class);
                 startActivity(contactIntent);
@@ -115,14 +103,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onStart();
         GoogleAnalytics.getInstance(this).reportActivityStart(this);
     }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (!NWEApplication.handleActivityResult(requestCode, resultCode, data)) {
-            super.onActivityResult(requestCode, resultCode, data);
-        }
-    }
-
 
     @Override
     protected void onPause() {

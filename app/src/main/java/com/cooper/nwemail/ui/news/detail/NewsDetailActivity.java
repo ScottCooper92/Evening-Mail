@@ -8,7 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import com.cooper.nwemail.R;
@@ -16,7 +15,6 @@ import com.cooper.nwemail.application.ApplicationComponent;
 import com.cooper.nwemail.application.NWEApplication;
 import com.cooper.nwemail.constants.Constants;
 import com.cooper.nwemail.ui.common.BaseActivity;
-import com.mopub.mobileads.MoPubView;
 
 import javax.inject.Inject;
 
@@ -53,14 +51,6 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Optional
     @InjectView(R.id.textView_pubDate)
     TextView mPubDate;
-
-    @Optional
-    @InjectView(R.id.adview_middle)
-    MoPubView mSquareAd;
-
-    @Optional
-    @InjectView(R.id.adview_bottom)
-    MoPubView mBannerAd;
 
     protected String mGuid;
 
@@ -149,7 +139,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     public void setArticlePubDate(String pubDate) {
         if (mPubDate != null)
-            mPubDate.setText(getString(R.string.last_updated) + " " + pubDate);
+            mPubDate.setText(getString(R.string.last_updated).concat(" " + pubDate));
     }
 
     @Override
@@ -164,20 +154,12 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
     @Override
     public void showMiddleAdvert() {
         Log.d(TAG, "showing Middle Advert");
-        if (mSquareAd != null) {
-            mSquareAd.setAdUnitId(getString(R.string.AD_MIDDLE_ID));
-            mSquareAd.loadAd();
-            mSquareAd.setVisibility(View.VISIBLE);
-        }
+        //Show the middle advert
     }
 
     @Override
     public void showBottomAdvert() {
-        if (mBannerAd != null) {
-            mBannerAd.setAdUnitId(getString(R.string.AD_BOTTOM_ID));
-            mBannerAd.loadAd();
-            mBannerAd.setVisibility(View.VISIBLE);
-        }
+        //Show the bottom advert
     }
 
     @Override
@@ -208,12 +190,7 @@ public class NewsDetailActivity extends BaseActivity implements NewsDetailView {
 
     @Override
     protected void onDestroy() {
-        if (mBannerAd != null) {
-            mBannerAd.destroy();
-        }
-        if (mSquareAd != null) {
-            mSquareAd.destroy();
-        }
+        //Destroy the adverts
         super.onDestroy();
     }
 }

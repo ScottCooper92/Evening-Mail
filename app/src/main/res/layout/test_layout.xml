@@ -16,21 +16,20 @@
             style="@style/Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planes intercepted and ships searched in Cumbria counter terrorism operation"
+            android:text="@string/sample_title"
             android:textIsSelectable="true" />
 
         <TextView
             android:id="@+id/textView_article_subheading"
             style="@style/Subheading"
             android:layout_marginTop="@dimen/text_margin"
-            android:text="POLICING operations have taken place in air and sea ports across Cumbria this week as officers joined a national campaign to protect the public from the threat of crime and terrorism." />
+            android:text="@string/sample_subheading" />
 
         <TextView
             android:id="@+id/textView_article_text1"
             style="@style/Content"
             android:layout_marginTop="@dimen/text_margin"
-            android:text="this is the first text this is the first text this is the first text this is the first text this is the first text
-            this is the first text this is the first text this is the first text this is the first text this is the first text this is the first text "
+            android:text="@string/sample_content"
             android:textStyle="italic" />
 
         <com.mopub.mobileads.MoPubView
@@ -42,7 +41,7 @@
         <TextView
             android:id="@+id/textView_article_text2"
             style="@style/Content"
-            android:text="this is the first text this is the first text this is the first text this is the first text " />
+            android:text="@string/sample_content" />
 
         <TextView
             android:id="@+id/textView_pubDate"

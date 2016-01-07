@@ -1,6 +1,5 @@
 package com.cooper.nwemail.ui.news.detail;
 
-import com.cooper.nwemail.application.NWEApplication;
 import com.cooper.nwemail.constants.Constants;
 import com.cooper.nwemail.data.DataManager;
 import com.cooper.nwemail.models.Article;
@@ -22,7 +21,7 @@ public class NewsDetailPresenterImpl extends NewsDetailPresenter {
     public NewsDetailPresenterImpl(final NewsDetailView view, final DataManager data) {
         super(view);
         mData = data;
-        isPremium = NWEApplication.isPremium();
+        isPremium = false; //Implement your own logic here!
     }
 
     @Override

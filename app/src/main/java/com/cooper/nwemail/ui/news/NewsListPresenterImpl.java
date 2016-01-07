@@ -9,7 +9,6 @@ import com.cooper.nwemail.data.DataManager;
 import com.cooper.nwemail.enums.NavigationEnum;
 import com.cooper.nwemail.models.Article;
 import com.cooper.nwemail.rss.RSSClient;
-import com.crashlytics.android.Crashlytics;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
@@ -101,7 +100,6 @@ public class NewsListPresenterImpl extends NewsListPresenter {
         view.hideUpdating();
         view.showErrorMessage();
         Log.d(TAG, "onRSSFailure");
-        Crashlytics.getInstance().core.logException(event.getError());
     }
 
     @Override

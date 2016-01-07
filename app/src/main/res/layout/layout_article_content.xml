@@ -2,10 +2,10 @@
 
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:transitionGroup="true">
+    android:transitionGroup="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -46,13 +46,7 @@
                     style="@style/Content"
                     android:layout_marginTop="@dimen/text_margin" />
 
-                <com.mopub.mobileads.MoPubView
-                    android:id="@+id/adview_middle"
-                    android:layout_width="@dimen/banner_ad_width"
-                    android:layout_height="@dimen/banner_ad_height"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/default_padding"
-                    android:visibility="gone" />
+                <!-- You can place an advertisement here -->
 
                 <TextView
                     android:id="@+id/textView_article_text2"
@@ -65,13 +59,7 @@
 
             <include layout="@layout/progressbar" />
 
-            <com.mopub.mobileads.MoPubView
-                android:id="@+id/adview_bottom"
-                android:layout_width="@dimen/banner_ad_width"
-                android:layout_height="@dimen/banner_ad_height"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/default_padding"
-                android:visibility="gone" />
+            <!-- You can place another advertisement here -->
 
             <TextView
                 android:id="@+id/textView_pubDate"

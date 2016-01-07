@@ -8,10 +8,8 @@ buildscript {
     }
 }
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 
 repositories {
-    maven { url 'https://maven.fabric.io/public' }
 }
 
 apply plugin: 'com.neenbedankt.android-apt'
@@ -63,10 +61,4 @@ dependencies {
         exclude module: 'xpp3'
     }
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile('com.crashlytics.sdk.android:crashlytics:2.3.2@aar') {
-        transitive = true;
-    }
-    compile('com.mopub.sdk.android:mopub:3.7.0@aar') {
-        transitive = true;
-    }
 }

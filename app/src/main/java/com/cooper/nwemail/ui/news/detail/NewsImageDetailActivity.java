@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.cooper.nwemail.R;
-import com.cooper.nwemail.application.NWEApplication;
 import com.squareup.picasso.Picasso;
 
 import butterknife.InjectView;
@@ -71,11 +70,6 @@ public class NewsImageDetailActivity extends NewsDetailActivity implements
     public boolean onCreateOptionsMenu(Menu menu) {
         //Override this to prevent the share action being added by the parent activity
         getMenuInflater().inflate(R.menu.menu_article_detail, menu);
-
-        if (!NWEApplication.isPremium()) {
-            //We still want the upgrade option however
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-        }
         return true;
     }
 

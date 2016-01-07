@@ -11,6 +11,7 @@ public class Constants {
     //TODO - Swipe between stories
     //TODO - Open drawer when first opened
     //TODO - View/Save images
+    //TODO - Maybe look at JSoup for better HTML parsing
 
     /**
      * RSS Feed ID's *
